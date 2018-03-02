@@ -2,7 +2,7 @@
 
   // Subjects
 
-  function find_all_subjects($options=[]) {
+  /*function find_all_subjects($options=[]) {
     global $db;
 
     $visible = $options['visible'] ?? false;
@@ -306,7 +306,7 @@
     $result = mysqli_query($db, $sql);
     confirm_result_set($result);
     return $result;
-  }
+  }*/
 
   // Admins
 
