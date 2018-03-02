@@ -10,6 +10,7 @@
     return true;
   }
 
+
   // Performs all actions necessary to log out an admin
   function log_out_admin() {
     unset($_SESSION['admin_id']);

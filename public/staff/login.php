@@ -29,7 +29,10 @@ if(is_post_request()) {
       if(password_verify($password, $admin['hashed_password'])) {
         // password matches
         log_in_admin($admin);
-        redirect_to(url_for('/staff/index.php'));
+        //redirect_to(url_for('/staff/index.php'));
+        if(logged_before){
+
+        }
       } else {
         // username found, but password does not match
         $errors[] = $login_failure_msg;
