@@ -182,12 +182,16 @@
     }
   }
 
+  //to see if user has logged in previously
   function logged_before($admin) {
     global $db;
 
     $sql = "SELECT * FROM admins ";
-    $sql .= "WHERE username='" . db_escape($db, $username) . "' ";
-    $sql .= "AND logged_in_previously";
-  }
+    //$sql .= "WHERE username='" . db_escape($db, $username) . "' ";
+    $sql .= "WHERE logged_in_previously=''";
+    $result = mysql_query($db, $sql);
+    confirm_result_set($result);
+    echo $result;
+  }//Couldn't get this to work 
 
 ?>

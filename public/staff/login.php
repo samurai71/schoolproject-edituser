@@ -30,9 +30,10 @@ if(is_post_request()) {
         // password matches
         log_in_admin($admin);
         redirect_to(url_for('/staff/index.php'));
-        // if(logged_before){
+        // if(logged_before($admin)){
+        //   redirect_to(url_for('/staff/index.php'));
 
-        // }
+        // } was getting a fatal error so not sure why this didn't work. The function is located in query_functions.php at the bottom of admins
       } else {
         // username found, but password does not match
         $errors[] = $login_failure_msg;
