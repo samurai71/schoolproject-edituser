@@ -1,6 +1,5 @@
 <?php
 
-  
   // Admins
 
   // Find all admins, ordered last_name, first_name
