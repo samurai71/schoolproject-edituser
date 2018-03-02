@@ -16,7 +16,7 @@
   <body>
     <div class="container">
     <header>
-      <h1>Research Project Create User Staff Area</h1>
+      <h1>Research Project Edit User</h1>
     </header>
   </div>
 
