@@ -182,4 +182,12 @@
     }
   }
 
+  function logged_before($admin) {
+    global $db;
+
+    $sql = "SELECT * FROM admins ";
+    $sql .= "WHERE username='" . db_escape($db, $username) . "' ";
+    $sql .= "AND logged_in_previously";
+  }
+
 ?>
